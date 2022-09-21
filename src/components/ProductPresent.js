@@ -28,7 +28,7 @@ function ProductPresent({source, title, rubrique, discount, price, description})
 export default ProductPresent;
 
 const PresentationContainer = styled.div`
-  flex-basis: 25%;
+  
   border-radius: var(--rad-half);
   position: relative;
 
@@ -46,6 +46,7 @@ const PresentationContainer = styled.div`
   }
    
   > .top{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,10 +54,12 @@ const PresentationContainer = styled.div`
     position: absolute;
     top: 10px;
     left: 0;
+    padding: 5px;
   }
 
   > .bot{
     height: 30%;
+    padding-top: 10px;
 
     > div{
       font-weight: 600;

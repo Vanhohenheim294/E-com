@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Navbar() {
@@ -6,10 +7,9 @@ function Navbar() {
     <NavContainer>
         <span className='Logo'>LOGO</span>
         <ul className='navDiv'>
-            <li>Home</li>
-            <li>Categories</li>
-            <li>Cart</li>
-            <li>My Account</li>
+            <li> <Link to="/"> Home </Link> </li>
+            <li>Panier</li>
+            <li>Compte</li>
         </ul>
     </NavContainer>
   )

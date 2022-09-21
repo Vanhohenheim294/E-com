@@ -6,6 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 
+  line-height: 25px;
 }
 
 *{
@@ -29,7 +30,7 @@ a{
   --rad-half: 5px;  
   --ft-sm: 14px;
   --ft-md: 16px;
-  --ft-xl: 18px;
+  --ft-xl: 20px;
   --ft-xxl: 24px;
 }
 
@@ -40,7 +41,13 @@ a{
 .container{
   width: 100%;
   padding: var(--pd-full);
-  max-width: 1366px;
+  /* max-width: 1366px; */
+}
+
+.title{
+  font-size: var(--ft-xxl);
+  margin-bottom: var(--mg-half);
+  color: blue;
 }
 
 code {

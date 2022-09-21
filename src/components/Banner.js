@@ -1,22 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Banner() {
   return (
-    <Router>
-      <BannerContainer>
-          <p>
-            <span>
-              Les meilleurs matelas <br/> à bon prix.
-            </span>
-            <Link className="link" to="/">Aller Voir</Link>
-          </p>
-          <div>
-            <img src="assets/img-4-1.svg" alt="hero" />
-          </div>
-      </BannerContainer>
-    </Router>
+    <BannerContainer>
+      <p>
+        <span> Les meilleurs matelas <br/> à bon prix. </span>
+        <Link className="link" to="/">Aller Voir</Link>
+      </p>
+      
+      <div>
+        <img src="assets/img-4-1.svg" alt="hero" />
+      </div>
+    </BannerContainer>
   )
 }
 
